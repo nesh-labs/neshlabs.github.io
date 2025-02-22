@@ -24,4 +24,9 @@ export const theme = {
       200: "#181818",
     },
   },
+  extends: {
+    fontFamily: {
+      satoshi: ["Satoshi", "sans-serif"],
+    },
+  },
 };

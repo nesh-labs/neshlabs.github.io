@@ -36,37 +36,43 @@
     <meta name="twitter:image" content="https://neshlabs.com/logo.png" />
     <link rel="canonical" href="https://neshlabs.com" />
     <link
-      href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500&display=swap"
+      href="https://api.fontshare.com/v2/css?f[]=satoshi&display=swap"
       rel="stylesheet"
     />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-gray-100 flex min-h-screen">
-    <!-- Sidebar -->
+  <body class="bg-gray-100 min-h-screen flex flex-col lg:flex-row">
+    <!-- Mobile Header -->
+    <header class="bg-white shadow-md p-4 flex items-center gap-4 lg:hidden">
+      <img src="assets/nesh-logo.svg" alt="Neshlabs Logo" class="h-12" />
+      <img src="assets/company-name.svg" alt="Company Name" class="h-8" />
+    </header>
+
+    <!-- Sidebar (Hidden on mobile) -->
     <aside
-      class="w-1/4 bg-white p-8 flex flex-col items-start shadow-lg max-w-[380px]"
+      class="w-1/4 bg-white p-8 flex-col items-start shadow-lg max-w-[380px] hidden lg:flex"
     >
       <div class="gap-3 flex flex-col max-w-[260px]">
         <img
           src="assets/nesh-logo.svg"
-          alt="company Logo"
+          alt="Company Logo"
           width="100"
           height="100"
         />
         <img
           src="assets/company-name.svg"
-          alt="company name"
+          alt="Company Name"
           width="150"
           height="100"
         />
-        <p class="mt-2 text-grey-100 font-normal">
+        <p class="mt-2 text-gray-600 font-normal">
           An experimental studio crafting products because we love the process
-          of creation
+          of creation.
         </p>
       </div>
       <div class="mt-auto w-full">
         <div
-          class="px-4 py-3 flex flex-col gap-3 rounded-lg text-sm border border-gray-200 border-solid"
+          class="px-4 py-3 flex flex-col gap-3 rounded-lg text-sm border border-gray-200"
         >
           <p class="font-semibold">Dynamic Duo</p>
           <p class="text-gray-700">
@@ -82,27 +88,25 @@
     </aside>
 
     <!-- Main Content -->
-    <main class="flex-1 p-8">
+    <main class="flex-1 p-6 flex flex-col">
       <div
-        class="bg-white p-4 rounded-lg shadow-md w-96 flex flex-col gap-2"
-        style="box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.24)"
+        class="bg-white p-4 rounded-lg shadow-md w-full max-w-md flex flex-col gap-2"
       >
         <img
           src="assets/chrome-extension.svg"
-          alt="any media exporter logo"
-          width="40"
-          height="40"
+          alt="Any Media Exporter Logo"
+          class="h-10 w-10"
         />
         <div>
-          <h2 class="text-grey-200 text-lg font-semibold flex items-center">
-            Any media exporter
-            <img src="assets/open-link.svg" alt="new" width="20" height="20" />
+          <h2 class="text-gray-800 text-lg font-medium flex items-center">
+            Any Media Exporter
+            <img src="assets/open-link.svg" alt="New" class="h-5 w-5 ml-2" />
           </h2>
-          <p class="text-grey-200">
-            Extract jpg, svg, mp4, gif from any website
+          <p class="text-gray-600">
+            Extract JPG, SVG, MP4, GIF from any website.
           </p>
         </div>
-        <span class="text-sm text-grey-50">Chrome extension</span>
+        <span class="text-sm text-gray-500">chrome extension</span>
       </div>
     </main>
   </body>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neshlabs - Experimental Studio for Creative Products</title>
+    <meta
+      name="description"
+      content="Neshlabs is an experimental studio crafting innovative products driven by a passion for creation. Discover our latest tools and extensions."
+    />
+    <meta
+      name="keywords"
+      content="Neshlabs, creative studio, product design, media exporter, chrome extension"
+    />
+    <meta name="author" content="Neshlabs Team" />
+    <meta
+      property="og:title"
+      content="Neshlabs - Experimental Studio for Creative Products"
+    />
+    <meta
+      property="og:description"
+      content="Discover Neshlabs's latest tools and extensions, designed for creators and innovators."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://neshlabs.com" />
+    <meta property="og:image" content="https://neshlabs.com/logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Neshlabs - Experimental Studio for Creative Products"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore innovative tools and extensions from Neshlabs."
+    />
+    <meta name="twitter:image" content="https://neshlabs.com/logo.png" />
+    <link rel="canonical" href="https://neshlabs.com" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex flex-col lg:flex-row">
+    <!-- Mobile Header -->
+    <header class="bg-white shadow-md p-4 flex items-center gap-4 lg:hidden">
+      <img src="assets/nesh-logo.svg" alt="Neshlabs Logo" class="h-12" />
+      <img src="assets/company-name.svg" alt="Company Name" class="h-8" />
+    </header>
+
+    <!-- Sidebar (Hidden on mobile) -->
+    <aside
+      class="w-1/4 bg-white p-8 flex-col items-start shadow-lg max-w-[380px] hidden lg:flex"
+    >
+      <div class="gap-3 flex flex-col max-w-[260px]">
+        <img
+          src="assets/nesh-logo.svg"
+          alt="Company Logo"
+          width="100"
+          height="100"
+        />
+        <img
+          src="assets/company-name.svg"
+          alt="Company Name"
+          width="150"
+          height="100"
+        />
+        <p class="mt-2 text-gray-600 font-normal">
+          An experimental studio crafting products because we love the process
+          of creation.
+        </p>
+      </div>
+      <div class="mt-auto w-full">
+        <div
+          class="px-4 py-3 flex flex-col gap-3 rounded-lg text-sm border border-gray-200"
+        >
+          <p class="font-semibold">Dynamic Duo</p>
+          <p class="text-gray-700">
+            Coding sensei
+            <a href="#" class="text-blue-800 font-medium">@DineshYadav</a>
+          </p>
+          <p class="text-gray-700">
+            Product Designer
+            <a href="#" class="text-blue-800 font-medium">@OmSingh</a>
+          </p>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6 flex flex-col">
+      <div
+        class="bg-white p-4 rounded-lg shadow-md w-full max-w-md flex flex-col gap-2"
+      >
+        <img
+          src="assets/chrome-extension.svg"
+          alt="Any Media Exporter Logo"
+          class="h-10 w-10"
+        />
+        <div>
+          <h2 class="text-gray-800 text-lg font-medium flex items-center">
+            Any Media Exporter
+            <img src="assets/open-link.svg" alt="New" class="h-5 w-5 ml-2" />
+          </h2>
+          <p class="text-gray-600">
+            Extract JPG, SVG, MP4, GIF from any website.
+          </p>
+        </div>
+        <span class="text-sm text-gray-500">chrome extension</span>
+      </div>
+    </main>
+  </body>
+</html>
